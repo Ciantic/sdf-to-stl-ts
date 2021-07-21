@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "deno",
+            "command": "run",
+            "problemMatcher": ["$deno"],
+            "label": "deno: run"
+        },
+        {
+            "type": "deno",
+            "command": "run",
+            "args": ["-A", "--unstable", "build.ts"],
+            "problemMatcher": ["$deno"],
+            "label": "deno build.ts (UI)",
+            "isBackground": true
+        }
+    ]
+}
